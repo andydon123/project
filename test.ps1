@@ -1,4 +1,4 @@
 $folders = Get-ChildItem -Path C:\ -Directory
 foreach( $folder in $folders ) {
-    "$folder"
+    "Папка: $($folder.Name) - была изменена $($folder.LastWriteTime)"
 }
